@@ -1,7 +1,7 @@
 class BillboardsController < ApplicationController
   def index
     @billboards = Billboard.all
-    render component: 'Billboards', props: {billboards: @billboards}
+    render component: 'Billboards', props: {billboards: @billboard}
   end
 
   def show
@@ -17,7 +17,7 @@ class BillboardsController < ApplicationController
   def create
     @billboard = Billboard.new(billboard_params)
     if @billboard.save
-      #either redirect or render something
+      redirect_to root_path
     else 
       render component: 'BillboardNew', props: {billboard: @billboard}
     end
@@ -31,7 +31,7 @@ class BillboardsController < ApplicationController
   def update
     @billboard = Billboard.find(params[:id])
     if @billboard.update(billboard_params)
-      # do something
+      redirect_to root_path
     else
       render component: 'BillboardEdit', props: {billboard: @billboard}
     end
