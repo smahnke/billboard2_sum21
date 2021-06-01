@@ -40,6 +40,7 @@ class BillboardsController < ApplicationController
   def destroy
     @billboard = Billboard.find(params[:id])
     @billboard.destroy
+    redirect_to root_path
   end
 
   private
