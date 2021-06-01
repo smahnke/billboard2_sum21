@@ -1,7 +1,7 @@
 class BillboardsController < ApplicationController
   def index
     @billboards = Billboard.all
-    render component: 'Billboards', props: {billboards: @billboard}
+    render component: 'Billboards', props:{ billboards: @billboards }
   end
 
   def show
