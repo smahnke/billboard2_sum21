@@ -3,7 +3,5 @@ class Artist < ApplicationRecord
 
   has_many :songs, dependent: :destroy
 
-  class Artist
-    validates :title :rank, :album, presence: true
-  end
+  validates :title :rank, :album, presence: true
 end
