@@ -6,15 +6,16 @@ const BillboardNew = ({billboard}) => {
   return (
     <>
       <h1>New Billboard</h1>
-      <form action='billboards' method='post'>
+      <form action='/billboards' method='post'>
         <input
           placeholder='Title'
           type='text'
+          required
           defaultValue={defaultTitle}
           name='billboard[title]'
         />
+        <button type='submit'>Add</button>
       </form>
-      <button type='submit'>Add</button>
     </>
   )
 }

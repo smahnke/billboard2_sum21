@@ -10,11 +10,11 @@ const Billboards = ({billboards}) => {
           <div>
             <h3>{billboard.title}</h3>
           <a href={'/billboards/' + billboard.id}>Show Billboard</a>
-          {''}
+          {' '}
           <a href={'/billboards/' + billboard.id + '/edit'}>Edit Billboard</a>
-          {''}
+          {' '}
           <a href={'/billboards/' + billboard.id} data-method="delete">Delete Billboard</a>
-          {''}
+          {' '}
           </div>
         ))
       }
