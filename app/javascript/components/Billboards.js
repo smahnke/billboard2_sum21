@@ -8,7 +8,7 @@ const Billboards = ({billboards}) => {
       {
         billboards.map( (billboard) => (
           <div>
-            <h3>{billboard.title}</h3>
+            <h3>{billboard.title} {' '} {billboard.week}</h3>
           <a href={'/billboards/' + billboard.id}>Show Billboard</a>
           {' '}
           <a href={'/billboards/' + billboard.id + '/edit'}>Edit Billboard</a>

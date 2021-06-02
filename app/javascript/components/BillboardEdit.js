@@ -1,8 +1,9 @@
 import React from 'react';
 
 const BillboardEdit = ({billboard}) => {
-  const { title, id } = billboard
+  const { title, week, id } = billboard
   const defaultTitle = title ? title : "";
+  const defaultWeek = week ? week : "";
   return (
     <>
       <h1>Editing {title}</h1>
@@ -14,6 +15,13 @@ const BillboardEdit = ({billboard}) => {
           required
           defaultValue={defaultTitle}
           name='billboard[title]'
+        />
+        <input
+          placeholder='Week'
+          type='text'
+          required
+          defaultValue={defaultWeek}
+          name='billboard[week]'
         />
         <button type='submit'>Update</button>
       </form>
