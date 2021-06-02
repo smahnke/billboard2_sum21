@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BillboardNew = ({billboard}) => {
-  const { title, week } = billboard
+  const { title, week, id } = billboard
   const defaultTitle = title ? title : "";
   const defaultWeek = week ? week :"";
   return (

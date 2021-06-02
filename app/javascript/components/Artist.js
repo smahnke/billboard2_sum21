@@ -1,5 +1,4 @@
 import React from 'react';
-import Billboard from './Billboard';
 
 const Artist = ({ billboard, artist }) => {
   const { title, week, id } = billboard
@@ -20,6 +19,6 @@ const Artist = ({ billboard, artist }) => {
       <a href={`/artists/${id}/songs`}>Show Songs</a>
     </>
   )
-}
+  }
 
 export default Artist;

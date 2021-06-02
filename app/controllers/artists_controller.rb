@@ -15,7 +15,7 @@ class ArtistsController < ApplicationController
   end
 
   def new
-    @artist = @billboard.artist.new
+    @artist = @billboard.artists.new
     render component: 'ArtistNew', props: {artist: @artist, billboard: @billboard}
   end
 
