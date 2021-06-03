@@ -17,7 +17,8 @@ const ArtistNew = ({artist, billboard}) => {
         defaultValue={defaultFName}
         name='artist[first_name]'
       />
-      <textarea 
+      <input
+        type='text' 
         required
         placeholder="Last Name"
         defaultValue={defaultLName}
