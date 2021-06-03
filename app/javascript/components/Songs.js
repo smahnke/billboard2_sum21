@@ -12,7 +12,7 @@ const Songs = ({ artist, songs }) => {
       {
         songs.map( (song) => (
           <div>
-            <h3>{song.title} from the album "{song.album} was ranked {song.id}</h3>
+            <h3>{song.title} from the album "{song.album}" was ranked {song.rank}</h3>
             <a href={url + '/' + song.id}>Show Song</a>
             {' '}
             <a href={url + '/' + song.id + '/edit'}>Edit Song</a>
